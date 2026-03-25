@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* imagem de fundo */
+    background-image: url("https://images.unsplash.com/photo-1508098682722-e99c643e7f0b");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* camada escura por cima do fundo */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, #0a1f44, #1e90ff);
+    color: white;
+    padding: 25px;
+}
+
+main {
+    padding: 20px;
+}
+
+/* títulos */
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 5px;
+}
+
+/* cards de notícias */
+.card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* curiosidades */
+.curiosidades ul {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    list-style-type: square;
+}
+
+/* rodapé */
+footer {
+    text-align: center;
+    background-color: #0a1f44;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
